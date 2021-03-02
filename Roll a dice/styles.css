@@ -1,0 +1,87 @@
+body{
+   margin: 0;
+   text-align: center;
+}
+
+.heading{
+   font-size: 5rem;
+   color: #e72626;
+   font-weight: bold;
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+#player1, #player2, #draw{display: none;}
+
+.description{
+   margin: 0;
+   font-size: 18px;
+   margin-top: 20px;
+}
+
+.left, .right{
+   display: inline-block;
+   margin: 50px;
+   margin-bottom: 0;
+   height: 200px;
+   width: 200px;
+   color: blue;
+   font-size: 30px;
+   text-align: center;
+}
+
+#leftBox, #rightBox{
+   text-align: center;
+   padding: 0;
+   margin-top: 20px;
+   height: 130px;
+   width: 130px;
+   background-color: darkgray;
+   color:blue;
+   font-size: 115px;
+   border-radius: 15px;
+   margin-left: 35px;
+}
+
+
+.go, .reset{
+   display: inline-block;
+   margin: 0;
+   margin-top: 20px;
+   height: 50px;
+   width: 250px;
+   background-color: #4959ec;
+   color: #fff;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 10px;
+   border-width: 0;
+}
+
+.reset:hover, .go:hover{
+   background-color: #7784fa;
+}
+
+.reset{display: none;}
+
+
+
+/* 
+switch(num1){
+   case "1": document.getElementsByClassName("leftBox")[0].innerHTML = "1";
+   break;
+
+   case "2": document.getElementsByClassName("leftBox")[0].innerHTML = "2";
+   break;
+
+   case "3": document.getElementsByClassName("leftBox")[0].innerHTML = "3";
+   break;
+
+   case "4": document.getElementsByClassName("leftBox")[0].innerHTML = "4";
+   break;
+
+   case "5": document.getElementsByClassName("leftBox")[0].innerHTML = "5";
+   break;
+
+   case "6": document.getElementsByClassName("leftBox")[0].innerHTML = "6";
+   break;
+} */
