@@ -1,0 +1,33 @@
+body::-webkit-scrollbar{
+   display: none;
+}
+
+h1{
+   font-size: 80px;
+   text-align: center;
+   background-color: burlywood;
+   border-radius: 20px;
+}
+
+
+.set{
+   text-align: center;
+   background-color: burlywood;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   border-radius: 20px;
+}
+
+
+.drum{
+   height: 110px;
+   width: 110px;
+   border-radius: 20px;
+   font-size: 60px;
+   color: white;
+   background-color: brown;
+}
+
+.drum:hover{
+   background-color: chocolate;
+}

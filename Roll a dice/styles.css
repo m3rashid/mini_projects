@@ -1,6 +1,9 @@
 body{
    margin: 0;
-   text-align: center;
+   text-align: center; 
+}
+body::-webkit-scrollbar{
+   display: none;
 }
 
 .heading{
@@ -64,24 +67,28 @@ body{
 .reset{display: none;}
 
 
-
-/* 
-switch(num1){
-   case "1": document.getElementsByClassName("leftBox")[0].innerHTML = "1";
-   break;
-
-   case "2": document.getElementsByClassName("leftBox")[0].innerHTML = "2";
-   break;
-
-   case "3": document.getElementsByClassName("leftBox")[0].innerHTML = "3";
-   break;
-
-   case "4": document.getElementsByClassName("leftBox")[0].innerHTML = "4";
-   break;
-
-   case "5": document.getElementsByClassName("leftBox")[0].innerHTML = "5";
-   break;
-
-   case "6": document.getElementsByClassName("leftBox")[0].innerHTML = "6";
-   break;
-} */
+@media(max-width: 650px){
+   .left, .right{
+      display: inline-block;
+      margin: 30px;
+      margin-bottom: 0;
+      height: 200px;
+      width: 130px;
+      color: blue;
+      font-size: 30px;
+      text-align: center;
+   }
+   
+   #leftBox, #rightBox{
+      text-align: center;
+      padding: 0;
+      margin-top: 20px;
+      height: 130px;
+      width: 130px;
+      background-color: darkgray;
+      color:blue;
+      font-size: 115px;
+      border-radius: 15px;
+      margin-left: auto;
+   }
+}
