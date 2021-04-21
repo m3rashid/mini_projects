@@ -1,0 +1,72 @@
+:root{
+    --border-color: rgb(27, 27, 99);
+    --body-color: rgb(84, 84, 223);
+    --clock-background: rgb(65, 60, 60);
+    --content-border: rgb(49, 39, 39);
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 400px;
+    margin: 50px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 25px solid var(--border-color);
+    background-color: var(--body-color);
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+label{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(245, 228, 0);
+}
+
+input{
+    height: 50px;
+    width: 80%;
+    font-size: 2.5rem;
+    border-radius: 25px;
+    margin-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+button[type="submit"]{
+    height: 50px;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px solid var(--border-color);
+    border-radius: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--content-border);
+    background-color: green;
+    
+}
+
+.content{
+    width: 86%;
+    margin: 30px 7% auto 7%;
+    border: 8px solid var(--content-border);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: var(--clock-background);
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgb(189, 17, 17);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
