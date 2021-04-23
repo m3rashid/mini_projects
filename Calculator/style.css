@@ -16,11 +16,8 @@
     border: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    /* overflow-x: hidden; */
 }
-/* #input-box::-webkit-scrollbar{
-    display: none;
-} */
+
 
 #input-box::-webkit-outer-spin-button,
 #input-box::-webkit-inner-spin-button{
@@ -47,7 +44,7 @@ button:last-child{
 
 button{
     height: 100%;
-    width: 24%;
+    width: 23%;
     box-sizing: border-box;
     font-size: 2rem;
     padding: 10px;
