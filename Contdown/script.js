@@ -24,8 +24,10 @@ function millisec(){
 }
 
 button.addEventListener("click", function(){
-    s.innerText = input.value-1;
-    ms.innerText = 999;
-    id1 = setInterval(sec, 1000);
-    id2 = setInterval(millisec, 10);
+    if(input.value>=1){
+        s.innerText = input.value-1;
+        ms.innerText = 999;
+        id1 = setInterval(sec, 1000);
+        id2 = setInterval(millisec, 10);
+    }
 })
