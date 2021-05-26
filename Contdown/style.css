@@ -1,36 +1,43 @@
-:root{
-    --border-color: rgb(27, 27, 99);
-    --body-color: rgb(84, 84, 223);
-    --clock-background: rgb(65, 60, 60);
-    --content-border: rgb(49, 39, 39);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
 }
+
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #414141  0%, #000000 34%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
     width: 400px;
     margin: 5px;
     padding-top: 20px;
     text-align: center;
-    border-radius: 50px;
-    border: 25px solid var(--border-color);
-    background-color: var(--body-color);
-    box-sizing: border-box;
-    padding-bottom: 15px;
+    border-radius: 40px;
+    border: 11px solid #ff6600ee;
+    background-color: rgba(170, 170, 180, 0.219);
+    padding-bottom: 20px;
 }
 
 label{
     font-size: 2rem;
     font-weight: 600;
-    color: rgb(245, 228, 0);
+    color: #ff6600ee;
 }
 
 input{
     height: 50px;
-    width: 80%;
-    font-size: 2.5rem;
-    border-radius: 25px;
+    width: 84%;
+    font-size: 2rem;
+    border-radius: 15px;
     margin-top:10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -43,29 +50,27 @@ input::-webkit-outer-spin-button{
 }
 
 #submit{
-    height: 50px;
+    height: 60px;
     font-size: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 5px solid var(--border-color);
-    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #274612;
+    border-radius: 12px;
     margin-top: 10px;
     font-weight: bold;
-    color: var(--content-border);
-    background-color: green;
-    
+    color: #ffffffd2;
+    background-color: #000000;    
 }
 
 .content{
     width: 86%;
     margin: 30px 7% auto 7%;
-    border: 8px solid var(--content-border);
+    border: 4px solid #274612;
     border-radius: 20px;
-    box-sizing: border-box;
-    background-color: var(--clock-background);
+    background-color: #000000;
     font-size: 4rem;
     font-weight: 600;
-    color: rgb(189, 17, 17);
+    color: rgba(189, 17, 17, 0.904);
     padding-top: 18px;
     padding-bottom: 18px;
     text-align: center;

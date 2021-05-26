@@ -51,4 +51,27 @@ function doAsDirected(event) {
 
 }
 
+const checkbox = document.querySelector("#checkbox");
+const theme = document.querySelector("#theme");
+const calculator = document.querySelector(".calculator");
+const toggler = document.querySelector("#toggler");
+const inputBox = document.querySelector("#input-box");
 
+
+checkbox.addEventListener("click", function(){
+    toggler.classList.toggle("dark-mode");
+
+    if(toggler.classList.length == 1){
+        // Dark Mode
+        theme.innerText = "Dark Mode";
+        inputBox.style.backgroundColor = "#272323";
+        inputBox.style.color = "#ffffff";
+        calculator.style.backgroundColor = "#000000";
+    } else {
+        // light Mode
+        theme.innerText = "Light Mode";
+        inputBox.style.backgroundColor = "#ffffff";
+        inputBox.style.color = "#000000";
+        calculator.style.backgroundColor = "#ffffff";
+    }
+});

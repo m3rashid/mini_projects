@@ -7,6 +7,8 @@ for(var i=0; i<document.querySelectorAll(".drum").length; i++){
    });
 }
 
+document.querySelector("#copyright").style.left = `${(window.innerWidth-170)/2}px`;
+
 
 document.addEventListener("keypress", function(event){
    makesound(event.key);
