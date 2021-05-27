@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(235deg, #00fff2cc, #830cd3);
+    /* overflow-y: hidden; */
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+svg{
+    width: 60%;
+    margin-top: -80px;
+}
+
+#frontWheel, #rearWheel{
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#manOnBike{
+    animation: man 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes man {
+    from{
+        transform: scaleX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes hat{
+    from{
+        transform: translateY(-10%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(50%) rotateZ(10deg);
+    }
+}
+
+#MaskGroup{
+    animation: back 5s infinite linear;
+}
+
+@keyframes back{
+    from{
+        transform: skewX(5deg);
+    }
+    to{
+        transform: skewX(-5deg);
+    }
+}
+
+
+@media(max-width: 768px){
+    svg{
+        width: 90%;
+        margin-top: 0;
+    }
+}
