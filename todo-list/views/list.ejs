@@ -1,0 +1,23 @@
+<%- include("header") -%>
+    <body>
+        <h1><%= listTitle %></h1>
+        <ul>
+            <% newTodo.forEach(function(item){ %>
+                <li>
+                    <input class="check" type="checkbox">
+                    <p><%= item.name %></p>
+                    
+                    <form action="/delete" method="POST">
+                        <button type="submit" value="<%= item._id %>" name="delete" class="delete">×</button>
+                        <input type="hidden" name="listName" value="<%= listTitle %>">
+                    </form>
+                </li>
+                <br>
+            <% }); %>
+        </ul>
+
+        <form action="/" method="POST">
+            <input type="text" name="newItem" placeholder="Add a task to do" autocomplete="off">
+            <button class="add" type="submit" name="list" value="<%= listTitle %>">+</button>
+        </form>
+<%- include("footer") -%>

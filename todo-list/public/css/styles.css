@@ -1,0 +1,111 @@
+:root{
+    --blue1: rgb(124, 163, 236);
+    --blue2: rgb(11, 43, 150);
+    --white1: rgb(255, 255, 255);
+    --white2: rgb(238, 227, 227);
+    --yellow1: rgb(236, 223, 104);
+    --black1: rgb(54, 52, 52);
+}
+html{
+    background: linear-gradient(15deg, var(--blue2) 50%, var(--blue1) 50%);
+    font-family: sans-serif;
+}
+body{
+    width: 500px;
+    margin: 20px auto 20px auto;
+}
+
+@media(max-width: 768px){
+    body{
+        width: 100%;
+        margin: 20px auto 20px auto;
+    }
+}
+
+h1{
+    font-size: 2rem;
+    padding-left: 25px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: -20px;
+    color: var(--white1);
+}
+ul{
+    /* background: linear-gradient(var(--white1), var(--white1), var(--yellow1)); */
+    padding: 20px;
+}
+li, .btn, .check{
+    font-size: 1.2em;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: black;
+
+}
+li{
+    background-color: var(--white1);
+    width: 100%;
+    min-height: 45px;
+    max-height: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    list-style: none;
+    position: relative;
+}
+.check{
+    width: 10%;
+    margin-right: -5px;
+    background-color: var(--white1);
+}
+p{
+    display: inline-block;
+    margin: 0;
+    margin: 10px 20px 10px 5px;
+}
+.delete{
+    border: none;
+    outline: none;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.check:checked+p{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+form{
+    margin: 20px;
+    margin-top: -30px;
+    box-sizing: border-box;
+}
+form input, form .add{
+    height: 50px;
+    border: none;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    outline: none;
+}
+
+form input{
+    width: 80%;
+    margin-right: -6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form .add{
+    width: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+footer{
+    margin: 20px;
+    color: var(--white1);
+}
